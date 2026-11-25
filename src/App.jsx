@@ -1,6 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import WhoWeSupportPage from "./pages/WhoWeSupportPage";
+import Team from "./pages/Team";
+import TeamMember from "./pages/TeamMember";
 
 const Placeholder = ({ title }) => (
   <main className="section">
@@ -13,14 +17,15 @@ const Placeholder = ({ title }) => (
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Placeholder title="About Us" />} />
         <Route path="/services" element={<Placeholder title="Services" />} />
-        <Route path="/who-we-support" element={<Placeholder title="Who We Support" />} />
-        <Route path="/team" element={<Placeholder title="Our Team" />} />
-        <Route path="/team/:slug" element={<Placeholder title="Team Profile" />} />
+        <Route path="/who-we-support" element={<WhoWeSupportPage />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/:slug" element={<TeamMember />} />
         <Route path="/contact" element={<Placeholder title="Contact Us" />} />
       </Routes>
     </>
