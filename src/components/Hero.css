@@ -1,0 +1,73 @@
+.hero {
+  padding-block: clamp(2.5rem, 7vw, 6rem) clamp(3.5rem, 9vw, 7rem);
+  overflow: hidden;
+}
+
+.hero__grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.hero__rule {
+  display: block;
+  width: 48px;
+  height: 1px;
+  margin-block: 1.1rem 1.6rem;
+  background: var(--gold);
+}
+
+.hero__description {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--green-deep);
+  opacity: 0.85;
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 2.25rem;
+}
+
+.hero__art {
+  position: relative;
+  width: min(100%, 440px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.hero__blob {
+  position: absolute;
+  inset: 6% 2% 4% 8%;
+  background: var(--beige);
+  border-radius: 58% 42% 55% 45% / 50% 56% 44% 50%;
+}
+
+.hero__sprig {
+  position: absolute;
+  left: 54%;
+  bottom: 6%;
+  width: 66%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 520px) {
+  .hero__actions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .hero__art {
+    width: min(100%, 520px);
+    margin-inline: 0 auto;
+  }
+}

@@ -1,0 +1,69 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-card__photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1.75rem;
+  overflow: hidden;
+  background: var(--beige);
+  border-radius: 999px 999px 0 0;
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__placeholder {
+  padding: 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--grey-green);
+}
+
+.team-card__name {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.team-card__designation {
+  margin-top: 0.15rem;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--olive);
+}
+
+.team-card__description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.team-card__key {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  width: 100%;
+  border-top: var(--hairline);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey-green);
+}
+
+.team-card .btn {
+  margin-top: 1.5rem;
+}
