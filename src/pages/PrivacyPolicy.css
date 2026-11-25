@@ -1,0 +1,38 @@
+.policy {
+  padding-bottom: var(--space-section);
+}
+
+.policy__inner {
+  max-width: 46rem;
+}
+
+.policy__draft {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border: 1px dashed var(--terracotta);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.policy__date {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--grey-green);
+}
+
+.policy h2 {
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.policy p {
+  margin-top: 0.75rem;
+  opacity: 0.9;
+}
+
+.policy a {
+  border-bottom: 1px solid var(--gold);
+}
